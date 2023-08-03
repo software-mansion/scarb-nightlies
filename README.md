@@ -1,4 +1,4 @@
-<center>
+<p align="center">
 
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="./scarb-dark.svg">
@@ -7,7 +7,7 @@
 
 # Scarb Nightlies
 
-</center>
+</p>
 
 This repository stores nightly builds of Scarb.
 
