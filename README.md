@@ -1,7 +1,9 @@
+<p align="center">
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="./scarb-dark.svg">
-<img width="128" height="128" align="center" src="./scarb-light.svg">
+<img width="128" height="128" src="./scarb-light.svg">
 </picture>
+</p>
 
 <h1 align="center">Scarb Nightlies</h1>
 
