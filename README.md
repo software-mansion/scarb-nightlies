@@ -8,6 +8,10 @@
 <h1 align="center">Scarb Nightlies</h1>
 
 This repository stores nightly builds of Scarb.
+They are built on top of Scarb's and Cairo compiler's latest `main` branches.
+Consult release notes for exact commit hashes and more information.
+Each build is identified by calendar day it was produced, and are tagged in the following
+pattern: `nightly-YYYY-MM-DD`, for example: `nightly-2023-08-03`.
 
 These builds are created automatically, unattended.
 **Use at your own risk.**
