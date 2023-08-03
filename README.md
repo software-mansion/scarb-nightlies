@@ -5,7 +5,7 @@
 <img width="128" height="128" src="./scarb-light.svg">
 </picture>
 
-# Scarb Nightlies
+<h1>Scarb Nightlies</h1>
 
 </p>
 
