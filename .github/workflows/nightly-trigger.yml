@@ -4,15 +4,21 @@ on:
   release:
     types: [published]
 
-# Extend with a matrix of repos if needed
 jobs:
   trigger-check:
+    strategy:
+      matrix:
+        repository: [
+          software-mansion/cairo-lint,
+          software-mansion/cairols,
+          software-mansion/vscode-cairo
+        ]
     runs-on: ubuntu-latest
     steps:
-      - name: VSCode-Cairo Repository Dispatch
+      - name: ${{ matrix.repository }} Repository Dispatch
         uses: peter-evans/repository-dispatch@v1
         with:
-          token: ${{ secrets.VSCODE_CAIRO_REPO_TOKEN }}
-          repository: software-mansion/vscode-cairo
+          token: ${{ secrets.CAIRO_LANGUAGE_SERVICES_REPOS_TOKEN }}
+          repository: ${{ matrix.repository }}
           event-type: new-scarb-nightly-published
           client-payload: '{"tag_name": ${{ github.event.release.tag_name }} }'
