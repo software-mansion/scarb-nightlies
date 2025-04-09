@@ -21,4 +21,4 @@ jobs:
           token: ${{ secrets.CAIRO_LANGUAGE_SERVICES_REPOS_TOKEN }}
           repository: ${{ matrix.repository }}
           event-type: new-scarb-nightly-published
-          client-payload: '{"tag_name": ${{ github.event.release.tag_name }} }'
+          client-payload: '{"tag_name": "${{ github.event.release.tag_name }}" }'
