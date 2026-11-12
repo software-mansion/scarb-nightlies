@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: ${{ matrix.repository }} Repository Dispatch
-        uses: peter-evans/repository-dispatch@v1
+        uses: peter-evans/repository-dispatch@v1.1.3
         with:
           token: ${{ secrets.CAIRO_LANGUAGE_SERVICES_REPOS_TOKEN }}
           repository: ${{ matrix.repository }}
